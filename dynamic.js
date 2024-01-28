@@ -1,5 +1,21 @@
 
+// USEFUL DOM REFERENCES
+
 const grid_container = document.querySelector('#grid_container');
+const reset_btn = document.querySelector('#reset_button');
+
+// GRID RESET (BUTTON CLICK)
+
+reset_btn.addEventListener('click', () => {
+    // prompt the user for the grid dimensions
+    let grid_dim = prompt("Enter the number of squares per side for the new grid");
+
+    // delete the current grid, then create a new one with the specified dimensions
+    grid_container.replaceChildren();
+    createGrid(grid_dim, grid_dim);
+});
+
+// GRID CREATION
 
 let tileStyle = `
     background-color: white; 
