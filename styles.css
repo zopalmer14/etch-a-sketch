@@ -2,6 +2,7 @@ body {
     background-color: white;
     color: white;
     font-family: Garamond;
+    font-size: 12px;
     margin: 0;
 }
 
@@ -15,10 +16,23 @@ body {
     height: 100vh;
 }
 
-#reset_button {
-    margin-bottom: 5vh;
-    padding: 3px 18px;
+#title_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    width: 60vh;
+    margin-bottom: 2.5vh;
+}
+
+#title {
+    color: green;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#reset_button {
+    padding: 3px 18px;
     background-color: white;
     border: 2px solid green;
     border-radius: 999px;
