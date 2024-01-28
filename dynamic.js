@@ -30,6 +30,14 @@ let tileStyle = `
     flex: 1 1 0;
 `;
 
+function color_randomizer() { 
+    let r = Math.floor(Math.random() *256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+
+    return `rgb(${r},${g},${b})`;
+};
+
 function createGrid(grid_dim) {
     for (let col = 0; col < grid_dim; col++) {
         // create a column flex-container for the tiles
