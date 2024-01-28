@@ -23,3 +23,7 @@ body {
     height: 72vh;
     padding: 0.25vh;
 }
+
+#grid_container > div:mouseover {
+    background-color: lightgray !important;
+}
